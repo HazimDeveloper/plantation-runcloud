@@ -1,0 +1,777 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+*{
+	font-family: 'Roboto', sans-serif;
+	margin:0;padding:0;
+	box-sizing: border-box;
+	outline:none; border:none;
+	text-decoration:none;
+	transition: all .2s linear;
+	line-height: 1.5;
+}
+
+html{
+	
+	font-size: 45%;
+	overflow-x: hidden;
+	scroll-behavior: smooth;
+}
+
+body
+{
+  	/*	background-image: url('plant1.jpg');
+*/
+background: #FFEBFD;
+	/* background-size: 100% 100%; */
+	padding-left: 20rem;
+	/* padding-left: 3px; */
+}
+
+
+section{
+
+   padding: 1rem 5%;
+   /* max-height: 100vh; */
+   margin-left: 2rem;
+   
+}
+
+#counterd{
+	float:left;
+	position: relative;
+	background:green;
+	height:50px;
+	width:400px;
+	border-radius: 25px;
+
+	
+}
+
+#counteruser{
+ background:white;	
+}
+
+
+@keyframes example {
+
+  50%  {background:green;}
+  100% {background:green;}
+}
+
+#page1{	
+padding-left:550px;
+}
+
+#btndon{	
+padding-left:650px;
+}
+
+/*  style for button in home page */
+#btn{
+	display: inline-block;
+	margin-top: 1rem;
+	padding: .8rem 3rem;
+	background: white;
+	border-top-left-radius:25px;
+    border-top-right-radius:25px;
+    border-bottom-right-radius:25px;
+    border-bottom-left-radius:25px;
+	border-color: black;
+	color: black;
+	cursor: pointer;
+	font-size: 2.5rem;
+	font-family: 'Nunito', sans-serif;
+
+}
+
+
+/*  style for back button in profile page */
+#btn1{
+	display: inline-block;
+	margin-top: 1rem;
+	padding: .8rem 3rem;
+	background: black;
+	border-top-left-radius:25px;
+    border-top-right-radius:25px;
+    border-bottom-right-radius:25px;
+    border-bottom-left-radius:25px;
+	color: #fff;
+	cursor: pointer;
+	font-size: 2.5rem;
+	font-family: 'Nunito', sans-serif;
+
+}
+
+#btnn{
+	display: inline-block;
+	margin-top: 1rem;
+	padding: .8rem 3rem;
+	background: black;
+	border-top-left-radius:25px;
+    border-top-right-radius:25px;
+    border-bottom-right-radius:25px;
+    border-bottom-left-radius:25px;
+	border-color: black;
+	color: white;
+	cursor: pointer;
+	font-size: 2.5rem;
+	font-family: 'Nunito', sans-serif;
+
+}
+
+
+
+
+#btn:hover{
+	background: #36CE55;
+	letter-spacing: .2rem;
+	color: white;
+
+	
+}
+
+#btn1:hover{
+	background: #36CE55;
+	letter-spacing: .2rem;
+	color: white;
+
+}
+
+#btn2:hover{
+	background: #36CE55;
+	letter-spacing: .2rem;
+	color: white;
+
+}
+
+header
+{
+	background-size: 100% 100%;
+	position: fixed;
+	top:0; left:0; bottom:0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	z-index:1000;
+	flex-flow: column;
+	padding: 8rem 2rem;
+	width: 30rem;
+	text-align: center;
+	
+}
+
+header h2
+{
+	color:#E80CA6;
+	text-align: center;
+	font-size:3rem;
+}
+
+header h3
+{
+	color:#ec86ce;
+	text-align: center;
+	font-size:2rem;
+}
+
+#name
+{
+	padding-top: 3rem;
+	color : white;
+	font-size:3rem;
+	font-weight:bolder;
+	font-family: 'Roboto', sans-serif;
+}
+
+#name span
+{
+	padding-top: 3rem;
+	color : #E80CA6;
+	font-size:3rem;
+	font-weight:bolder;
+	text-transform: uppercase;
+	font-family: 'Roboto', sans-serif;
+}
+
+#headingdon h1
+{
+	color : black;
+	font-size:5rem;
+	font-weight:bolder;
+	text-transform: uppercase;
+	padding-left: 7rem;
+}
+
+
+/* style for pick plant */
+.container{
+   max-width: 1400px;
+   margin:0 auto;
+   padding:3rem 2rem;
+}
+
+.container {
+   font-size: 3.5rem;
+   color:#444;
+   margin-bottom: 3rem;
+   text-transform: uppercase;
+   text-align: center;
+}
+
+.container .products-container{
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+   gap:5rem;
+}
+
+.container .products-container .product{
+   text-align: center;
+   padding:7rem 3rem;
+   background: #fff;
+   box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+   outline: .1rem solid #ccc;
+   outline-offset: -1.5rem;
+   cursor: pointer;
+}
+
+.container .products-container .product:hover{
+   outline: .2rem solid #b7fb75;
+   outline-offset: 0;
+}
+
+.container .products-container .product img{
+   height: 25rem;
+}
+
+.container .products-container .product:hover img{
+   transform: scale(.9);
+}
+
+.container .products-container .product h3{
+   padding:.5rem 0;
+   font-size: 2rem;
+}
+
+.container .products-container .product:hover h3{
+   color:#36600b;
+}
+
+.container .products-container .product {
+   font-size: 2rem;
+   color:#2c490f;
+}
+
+.btndonate{
+   display: in-line block;
+   gap:1.5rem;
+   flex-wrap: wrap;
+   margin-top: 1rem;
+   padding: .8rem 3rem;
+   border-radius:15px;
+   font-family: 'Nunito', sans-serif;
+
+   
+}
+
+.btndonate a{
+   flex:1 1 16rem;
+   padding:5rem;
+   font-size: 1.8rem;
+   color:#444;
+   border:.1rem solid #444;
+   font-family: 'Nunito', sans-serif;
+
+}
+
+
+
+ a.btndonate{
+   background:#36600b;
+   color:#fff;
+   font-family: 'Nunito', sans-serif;
+
+}
+
+ a.btndonate:hover{
+   background:#b7fb75;
+   font-family: 'Nunito', sans-serif;
+
+}
+
+
+/*style for pick forest */
+
+.container2{
+   max-width: 1200px;
+   margin:0 auto;
+   padding:3rem 2rem;
+}
+
+.container2 {
+   font-size: 3.5rem;
+   color:#444;
+   margin-bottom: 3rem;
+   text-transform: uppercase;
+   text-align: center;
+}
+
+.container2 .location-container{
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+   gap:2rem;
+}
+
+.container2 .location-container .location{
+   text-align: center;
+   padding:3rem 2rem;
+   background: #fff;
+   box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+   outline: .1rem solid #ccc;
+   outline-offset: -1.5rem;
+   cursor: pointer;
+}
+
+.container2 .location-container .location:hover{
+   outline: .2rem solid #b7fb75;
+   outline-offset: 0;
+}
+
+.container2 .location-container .location img{
+   height: 25rem;
+}
+
+.container2 .location-container .location:hover img{
+   transform: scale(.9);
+}
+
+.container2 .location-container .location h3{
+   padding:.5rem 0;
+   font-size: 2rem;
+   color:#444;
+}
+
+.container2 .location-container .location:hover h3{
+   color:#27ae60;
+}
+
+.container2 .location-container .location {
+   font-size: 2rem;
+   color:#444;
+}
+
+
+.btnlocation{
+   display: in-line block;
+   gap:1.5rem;
+   flex-wrap: wrap;
+   margin-top: 1rem;
+   padding: .8rem 3rem;
+   border-radius:15px;
+   font-family: 'Nunito', sans-serif;
+
+   
+}
+
+.btnlocation a{
+	   background: #215606;
+
+   flex:1 1 16rem;
+   padding:5rem;
+   font-size: 1.8rem;
+   color:#444;
+   border:.1rem solid #444;
+   font-family: 'Nunito', sans-serif;
+
+}
+
+
+
+ a.btnlocation{
+   background: #215606;
+   color:#fff;
+   font-family: 'Nunito', sans-serif;
+
+}
+
+ a.btnlocation:hover{
+   background:#b7fb75;
+    color:black;
+	letter-spacing: .2rem;
+	font-family: 'Nunito', sans-serif;
+
+
+}
+
+
+
+
+
+#paymenttitle
+{
+	color : black;
+	font-weight:bolder;
+	font-size:50px;
+	font-family:'Nunito', sans-serif;
+}
+
+
+#headingdon h1 span
+{
+	color : green;
+	font-size:50px;
+	font-weight:bolder;
+	text-transform: uppercase;
+
+}
+
+#abtpage
+{
+	align-items:center;
+}
+
+#skills h1{
+	color : black;
+	font-size:4rem;
+	font-weight:bolder;
+	text-transform: uppercase;
+}
+
+#skills h1 span
+{
+	color : #E80CA6;
+	font-size:4rem;
+	font-weight:bolder;
+	text-transform: uppercase;
+}
+
+#navbar {
+	display: block;
+	font-size: 3rem;
+	color: #fff;
+	margin: 2rem 0;
+    font-family: 'Lexend Deca', sans-serif;
+	font-style:bolder;
+	padding-bottom:3rem;
+}
+
+#navbar a{
+	display: block;
+	font-size: 3rem;
+	color: #fff;
+	margin: 2rem 0;
+    font-family: 'Lexend Deca', sans-serif;
+	font-style:bolder;
+	padding-bottom:3rem;
+}
+
+#navbar a:hover{
+	 letter-spacing:.4rem;
+	 color:#77d44f;
+}
+
+#navigationbar
+{
+	position: fixed;
+	top: 1rem; right:1rem;
+	z-index:10000;
+	background:#7a0236;
+	color: #fff;
+	border-radius: .5rem;
+	padding: 1 rem 1.5rem;
+	font-size: 3rem;
+	cursor: pointer;
+	display: none;
+}
+
+@media (max-width:991px)
+{
+	html{
+		font-size: 55%;
+	}
+	
+	body{
+		padding:0;
+	}
+	
+	#menu-bars{
+		display: initial;
+	}
+	
+	header{
+		left:-120%;
+	}
+	  
+}
+
+#abt h1
+{
+	color : #E80CA6;
+	font-size:4rem;
+	font-weight:bolder;
+	text-transform: uppercase;
+	padding-left: 7rem;
+	padding-bottom: 4rem;
+}
+
+#abt h1 span
+{
+	color : black;
+	font-size:4rem;
+	font-weight:bolder;
+	text-transform: uppercase;
+	padding-bottom: 4rem;
+
+
+}
+
+#home
+{
+	display: flex;
+	background-image: url('plant3.jpg');
+	background-position:center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 1.5rem;
+	
+}
+
+#home
+{
+	display: flex;
+	background-image: url('plant3.jpg');
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 1.5rem;
+	
+}
+
+#home image
+{
+	flex:1 1 30rem;
+	
+
+}
+
+#home img{
+	
+	border: 8px solid black;
+	width:80%;
+	
+
+}
+
+#page1
+{
+	flex:1 1 40rem;
+}
+
+
+
+#page1 i
+{
+	flex:1 1 40rem;
+	color:white;
+	font-size:20px;
+	
+	
+}
+
+
+#hi{
+	font-family:'Poppins', sans-serif;
+	font-size: 2rem;
+	color:black;
+}
+
+#page1 h3{
+	font-size: 4.5rem;
+	color:#E80CA6;
+	text-transform: uppercase;
+}
+
+#page1 h3 span{
+	color:black;
+	text-transform: uppercase;
+}
+
+#info
+{
+	font-family:'Poppins', sans-serif;
+	font-size: 2.5rem;
+	color:#111;
+	padding: .5rem 0;
+}
+
+#text{
+	font-family:'Roboto', sans-serif;
+	font-size: 1.5rem;
+	color:#666;
+	padding: .5rem 0;
+}
+
+/*about us*/
+#about h1{
+	font-size: 6rem;
+	padding-bottom: 1rem;
+	padding-top: 3rem;
+	color: #111;
+}
+
+#about h1 span{
+	
+    padding-top: 6rem;
+	font-size: 4rem;
+	color: #E80CA6;
+	padding-bottom: 2rem;
+}
+
+#about h2{
+	font-size: 6rem;
+	padding-bottom: 1rem;
+	padding-top: 3rem;
+	
+	color: #111;
+}
+
+#profilepage{
+	display: flex;
+	flex-wrap: wrap;
+	gap:1.5rem;
+	padding-bottom: 2rem;
+}
+
+#image2{
+	
+    width: 20%;
+	height: 20%;
+	border-bottom: 1px solid #f7f7f7;	
+	padding-right: 1rem;
+}
+
+#image2 img{
+	height: 100%;
+	object-fit: cover;
+	border: 1rem solid black;
+	box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+	width:100%;
+	/*to round rhe image border */
+	border-radius: 50%;
+	
+	/*border color*/
+	border: 8px solid #f7f7f7;
+}
+
+#page2{
+	flex: 1 1 50rem;
+}
+
+#page2 h3{
+	font-family:'Poppins', sans-serif;
+	color: #333;
+	font-size: 3.0rem;
+	padding-bottom: 2rem;
+
+}
+
+#page2 p{
+	font-family:'Nunito', sans-serif;
+	color: #666;
+	font-size: 1.7rem;
+	padding: .5rem 0;
+	font-style:bolder;
+	
+	
+}
+
+
+
+#forms h1
+{
+	font-style:bolder;
+	text-align:center;
+	font-family:'Poppins', sans-serif;
+	font-size: 4rem;
+}
+
+#forms p
+{
+	font-style:bolder;
+	text-align:center;
+	color:#E80CA6;
+	font-family:'Roboto', sans-serif;
+
+}
+
+input[type=text],select,textarea, input[type=email],input[type=phone]
+{
+	font-size: 50px;
+	/* width: 70%; */
+	text-align:center;
+	font-style:bolder;
+}
+
+#abtpage{
+	
+	padding-left:100px;
+	background:white;
+	height:500px;
+	width:1000px;
+	border-radius:25px;
+	
+}
+
+#payment-section h1{
+	font-size: 20px;
+}
+
+#forms
+{
+		text-align:center;
+		align-items: center;
+		border-collapse:collapse;
+		font-size:50px;
+		font-family: 'Poppins', sans-serif;
+		font-style:bolder;
+
+}
+#footer
+{
+	margin-top: 2rem;
+	font-size: 20px;
+	padding: 2.5rem;
+	text-align: center;
+	color:#666;
+	background: #fff;
+	font-family:'Poppins', sans-serif;
+     left: 0;
+     bottom: 0;
+     width: 100%;
+     background-color: black;
+     color: white;
+     text-align: center;
+	 height:80px;
+}
+
+#footer p
+{
+	padding-left:220px;
+	font-family:'Poppins', sans-serif;
+
+}
+
+#contactus
+{
+	color: white;
+	padding-left:220px;
+	font-family:'Poppins', sans-serif;
+
+}
+
+#contactus:hover{
+	letter-spacing: .2rem;
+	color: #36CE55;
+
+	
+}
